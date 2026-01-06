@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active State Navigator</title>
+    <link
+      rel="icon"
+      href="https://www.shutterstock.com/image-vector/list-bullets-vector-icon-menu-260nw-2450724199.jpg"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <header class="w-full fixed bg-gray-800 backdrop-blur z-50">
+      <nav
+        class="md:flex justify-between items-center py-5 text-white max-w-7xl px-10 cursor-pointer text-center relative"
+      >
+        <h1 class="font-bold text-lg text-green-500">Pavithra</h1>
+        <ul class="md:flex justify-around gap-10 listContainer hidden">
+          <li class="font-medium hover:font-bold hover:text-gray-100">Home</li>
+          <li class="font-medium hover:font-bold hover:text-gray-100">About</li>
+          <li class="font-medium hover:font-bold hover:text-gray-100">
+            Contact
+          </li>
+          <li class="font-medium hover:font-bold hover:text-gray-100">
+            Services
+          </li>
+          <li class="font-medium hover:font-bold hover:text-gray-100">
+            Projects
+          </li>
+        </ul>
+        <button class="md:hidden absolute top-5 right-10" id="menu-btn">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <ul class="hidden py-3 mobileList md:hidden">
+          <li class="font-medium hover:font-bold hover:text-gray-100 py-2">
+            Home
+          </li>
+          <li class="font-medium hover:font-bold hover:text-gray-100 py-2">
+            About
+          </li>
+          <li class="font-medium hover:font-bold hover:text-gray-100 py-2">
+            Contact
+          </li>
+          <li class="font-medium hover:font-bold hover:text-gray-100 py-2">
+            Services
+          </li>
+          <li class="font-medium hover:font-bold hover:text-gray-100 py-2">
+            Projects
+          </li>
+        </ul>
+
+        <button
+          class="hidden md:hidden absolute top-5 right-10"
+          id="close-icon"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </nav>
+    </header>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

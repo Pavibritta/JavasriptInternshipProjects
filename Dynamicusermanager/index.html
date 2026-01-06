@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic User Manager</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa2j6Fa1JcbXVkoW7mMmS0qxpPDJXZVmi-Rw&s"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="bg-blue-50">
+    <!--input form-->
+    <div class="flex justify-center my-10">
+      <div
+        class="rounded shadow-sm w-full md:w-lg bg-white flex flex-col justify-center"
+      >
+        <h2 class="text-2xl font-bold mb-2 text-center text-gray-600 mt-3">
+          User Details
+        </h2>
+        <div class="mx-auto flex flex-col">
+          <input
+            type="text"
+            name="name"
+            id="input-name"
+            class="border border-gray-300 shadow-sm rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 my-5 mx-auto min-w-10 md:w-sm"
+            placeholder="Enter User Name"
+          />
+          <small class="error text-red-600 text-sm" id="nameError"></small>
+        </div>
+        <div class="mx-auto flex flex-col">
+          <input
+            type="text"
+            id="input-job"
+            name="job"
+            class="border border-gray-300 shadow-sm rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 my-5 mx-auto min-w-10 md:w-sm"
+            placeholder="Enter Job Title"
+          />
+          <small class="error text-red-600 text-sm" id="jobError"></small>
+        </div>
+
+        <button
+          type="submit"
+          class="rounded py-2 px-3 mx-auto my-2 bg-blue-600 text-white hover:bg-blue-800 font-medium cursor-pointer text-md"
+          id="submit-btn"
+        >
+          Add User
+        </button>
+      </div>
+    </div>
+
+    <!--output card-->
+    <div
+      class=""
+      id="output-div"
+    ></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
