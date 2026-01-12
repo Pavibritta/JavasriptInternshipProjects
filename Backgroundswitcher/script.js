@@ -23,126 +23,31 @@ changeBtn.addEventListener("click", () => {
   randomColor = colors[randomIndex];
   console.log(randomColor);
 
-  const inputName = document.getElementById("name-input");
-  const error = document.getElementById("error");
   const body = document.querySelector("body");
-
-  if (inputName.value === "") {
-    error.innerText = "enter your name !";
-  } else {
-    const outputDiv = document.createElement("div");
-
-    outputDiv.className = ` shadow rounded w-lg mt-10 mx-auto text-center p-2`;
-    outputDiv.style.backgroundColor = randomColor;
-    outputDiv.style.color = "white";
-    if (randomColor == "yellow") {
-      outputDiv.style.color = "black";
-    } else if (randomColor == "pink") {
-      outputDiv.style.color = "black";
-    }
-
-    outputDiv.textContent = `Hello ${inputName.value.toUpperCase()}, Welcome to CyberDude!`;
-    body.append(outputDiv);
-    error.innerText = "";
-  }
+  body.style.backgroundColor = randomColor;
 });
 
 greenBtn.addEventListener("click", () => {
-  const inputName = document.getElementById("name-input");
-  const error = document.getElementById("error");
   const body = document.querySelector("body");
-
-  if (inputName.value === "") {
-    error.innerText = "enter your name !";
-  } else {
-    const outputDiv = document.createElement("div");
-
-    outputDiv.className = ` shadow rounded w-lg mt-10 mx-auto text-center p-2`;
-    outputDiv.style.backgroundColor = "green";
-    outputDiv.style.color = "white";
-
-    outputDiv.textContent = `Hello ${inputName.value.toUpperCase()}, Welcome to CyberDude!`;
-    body.append(outputDiv);
-    error.innerText = "";
-  }
+  body.style.backgroundColor = "green";
 });
 
 redBtn.addEventListener("click", () => {
-  const inputName = document.getElementById("name-input");
-  const error = document.getElementById("error");
   const body = document.querySelector("body");
-
-  if (inputName.value === "") {
-    error.innerText = "enter your name !";
-  } else {
-    const outputDiv = document.createElement("div");
-
-    outputDiv.className = ` shadow rounded w-lg mt-10 mx-auto text-center p-2`;
-    outputDiv.style.backgroundColor = "red";
-    outputDiv.style.color = "white";
-
-    outputDiv.textContent = `Hello ${inputName.value.toUpperCase()}, Welcome to CyberDude!`;
-    body.append(outputDiv);
-    error.innerText = "";
-  }
+  body.style.backgroundColor = "red";
 });
 
 yellowBtn.addEventListener("click", () => {
-  const inputName = document.getElementById("name-input");
-  const error = document.getElementById("error");
   const body = document.querySelector("body");
-
-  if (inputName.value === "") {
-    error.innerText = "enter your name !";
-  } else {
-    const outputDiv = document.createElement("div");
-
-    outputDiv.className = ` shadow rounded w-lg mt-10 mx-auto text-center p-2`;
-    outputDiv.style.backgroundColor = "yellow";
-    outputDiv.style.color = "black";
-
-    outputDiv.textContent = `Hello ${inputName.value.toUpperCase()}, Welcome to CyberDude!`;
-    body.append(outputDiv);
-    error.innerText = "";
-  }
+  body.style.backgroundColor = "yellow";
 });
 
 blackBtn.addEventListener("click", () => {
-  const inputName = document.getElementById("name-input");
-  const error = document.getElementById("error");
   const body = document.querySelector("body");
-
-  if (inputName.value === "") {
-    error.innerText = "enter your name !";
-  } else {
-    const outputDiv = document.createElement("div");
-
-    outputDiv.className = ` shadow rounded w-lg mt-10 mx-auto text-center p-2`;
-    outputDiv.style.backgroundColor = "black";
-    outputDiv.style.color = "white";
-
-    outputDiv.textContent = `Hello ${inputName.value.toUpperCase()}, Welcome to CyberDude!`;
-    body.append(outputDiv);
-    error.innerText = "";
-  }
+  body.style.backgroundColor = "black";
 });
 
 blueBtn.addEventListener("click", () => {
-  const inputName = document.getElementById("name-input");
-  const error = document.getElementById("error");
   const body = document.querySelector("body");
-
-  if (inputName.value === "") {
-    error.innerText = "enter your name !";
-  } else {
-    const outputDiv = document.createElement("div");
-
-    outputDiv.className = ` shadow rounded w-lg mt-10 mx-auto text-center p-2`;
-    outputDiv.style.backgroundColor = "blue";
-    outputDiv.style.color = "white";
-
-    outputDiv.textContent = `Hello ${inputName.value.toUpperCase()}, Welcome to CyberDude!`;
-    body.append(outputDiv);
-    error.innerText = "";
-  }
+  body.style.backgroundColor = "blue";
 });
