@@ -15,6 +15,8 @@ This repository contains multiple JavaScript projects developed using **HTML, Ja
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Activestatenavigator/
 - **Project 3**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Dynamicusermanager/
+  - **Project 4**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Greetingbot/
 ## Deployment
 The main project is deployed at the root of the repository using **GitHub Pages**.  
 Other projects are organized in subfolders and accessible via direct links.
