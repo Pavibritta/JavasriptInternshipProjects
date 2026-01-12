@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting Bot</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="icon"
+      href="https://static.vecteezy.com/system/resources/previews/010/404/941/non_2x/human-greeting-line-icon-illustration-vector.jpg"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- <h1 class="text-xl text-green-600 text-center mt-10">GREETING BOT</h1> -->
+    <div class="flex justify-center">
+      <div
+        class="w-full rounded md:w-lg mt-10 shadow bg-white flex flex-col justify-center"
+      >
+        <input
+          type="text"
+          name="name"
+          id="name-input"
+          placeholder="Enter Your Name"
+          class="border border-gray-300 shadow-sm rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 mt-5 mx-auto min-w-10 md:w-sm"
+        />
+        <small class="text-center text-red-600" id="error"></small>
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="rounded py-2 px-3 mx-auto my-2 bg-blue-600 text-white hover:bg-blue-800 font-medium cursor-pointer text-md"
+            id="submit-btn"
+          >
+            GREET
+          </button>
+          <!-- <button
+            type="submit"
+            class="rounded py-2 px-3 mx-auto my-2 bg-blue-600 text-white hover:bg-blue-800 font-medium cursor-pointer text-md"
+            id="Change-btn"
+          >
+            Change Color
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
