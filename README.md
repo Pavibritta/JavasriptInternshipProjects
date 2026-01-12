@@ -17,6 +17,10 @@ This repository contains multiple JavaScript projects developed using **HTML, Ja
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Dynamicusermanager/
   - **Project 4**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Greetingbot/
+  - **Project 5**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Backgroundswitcher/
+
+
 ## Deployment
 The main project is deployed at the root of the repository using **GitHub Pages**.  
 Other projects are organized in subfolders and accessible via direct links.
