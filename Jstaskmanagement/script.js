@@ -21,3 +21,21 @@ closeBtn.addEventListener("click", () => {
   closeBtn.classList.remove("block");
   closeBtn.classList.add("hidden");
 });
+
+const listContainer = document.querySelectorAll(".list-container li");
+console.log(listContainer);
+
+listContainer.forEach((list) => {
+  list.addEventListener("click", () => {
+    listContainer.forEach((list) => {
+      list.classList.remove(
+        "bg-green-300",
+        "px-3",
+        "py-2",
+        "rounded",
+        "shadow-sm"
+      );
+    });
+    list.classList.add("bg-green-300", "px-3", "py-2", "rounded", "shadow-sm");
+  });
+});
