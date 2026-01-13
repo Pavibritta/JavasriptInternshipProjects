@@ -8,6 +8,9 @@ This repository contains multiple JavaScript projects developed using **HTML, Ja
 - Tailwind CSS (CLI)
 
 ## Projects
+- **Project main project**  
+Live: https://pavibritta.github.io/JavasriptInternshipProjects/Jstaskmanagement
+
 - **Project 1 (Root Project)**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/
 

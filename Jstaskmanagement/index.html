@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pavibritta|js</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="https://e7.pngegg.com/pngimages/894/712/png-clipart-task-management-project-management-performance-management-business-text-service.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-900 font-sans text-white">
+    <!--header Section-->
+    <header class="w-full bg-gray-950/80 backdrop-blur-md z-50 fixed">
+      <nav
+        class="max-w-7xl flex justify-between items-center px-6 py-4 cursor-pointer md:border-b border-white shadow"
+      >
+        <h1 class="font-bold text-green-300 text-2xl sm:">Pavithra</h1>
+        <ul class="md:flex justify-between items-center gap-5 hidden">
+          <li>
+            <a
+              href="#home"
+              class="text-md font-medium hover:bg-green-300 transition-colors px-3 py-2 rounded"
+              >Home</a
+            >
+          </li>
+          <li
+            class="text-md font-medium hover:bg-green-300 transition-colors px-3 py-2 rounded"
+          >
+            <a
+              href="#task"
+              class="text-md font-medium hover:bg-green-300 transition-colors px-3 py-2 rounded"
+              >Tasks</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Pavibritta"
+              class="inline-block px-3 py-1 text-black rounded-md font-semibold hover:bg-green-300 transition"
+            >
+              <img src="./assets/images/GitHub.png" alt="" class="h-6 w-6" />
+            </a>
+          </li>
+        </ul>
+        <button
+          class="md:hidden absolute top-5 right-10 text-green-300 text-lg"
+          id="menu-btn"
+        >
+          <i class="fa-solid fa-list"></i>
+        </button>
+      </nav>
+
+      <!--mobile navbar-->
+      <nav class="hidden mobileList text-center border-b border-white">
+        <button class="absolute top-5 right-10 text-green-400" id="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul class="flex flex-col items-center gap-6 py-6">
+          <li>
+            <a
+              href="#home"
+              class="block text-md font-medium hover:bg-green-300 transition-colors px-4 py-2 rounded"
+            >
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#task"
+              class="block text-md font-medium hover:bg-green-300 transition-colors px-4 py-2 rounded"
+            >
+              Tasks
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/Pavibritta"
+              class="inline-block px-3 py-2 rounded-md font-semibold hover:bg-green-300 transition"
+            >
+              <img
+                src="./assets/images/GitHub.png"
+                alt="GitHub"
+                class="h-6 w-6"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Hero section-->
+
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center px-6"
+    >
+      <div class="text-center mb-10 sm:mt-30">
+        <h1 class="text-green-300 text-2xl font-bold mb-4">
+          Welcome to Pavithra's JS Projects
+        </h1>
+        <p class="text-lg mx-auto max-w-2xl text-gray-300">
+          I'm learning full-stack development with Cyberdude Network. Here are
+          some of the JavaScript projects and tasks I'm working on to improve my
+          skills.
+        </p>
+        <a
+          href="#task"
+          class="inline-block bg-green-300 text-gray-800 mt-10 px-4 py-2 border border-white rounded shadow font-medium hover:bg-green-400 transition cursor-pointer"
+        >
+          View Tasks
+        </a>
+      </div>
+    </section>
+    <!--task section-->
+
+    <section id="task" class="w-full max-w-6xl mx-auto">
+      <div class="text-center mb-3">
+        <h2 class="text-4xl font-bold text-green-300">My JavaScript Tasks</h2>
+        <p class="text-gray-400 mt-3">
+          Projects I built while learning Full Stack Development
+        </p>
+      </div>
+      <!-- Card 1 -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-20"
+      >
+        <div
+          class="border border-white rounded-xl p-6 flex flex-col items-center justify-center"
+        >
+          <h3 class="text-xl font-semibold mb-4">JS Task 1</h3>
+          <h1 class="text-2xl font-semibold mb-4">Document Fragment</h1>
+          <a
+            href="https://pavibritta.github.io/JavasriptInternshipProjects/"
+            class="inline-block bg-green-300 text-gray-800 mt-4 px-4 py-2 border border-white rounded shadow font-medium hover:bg-green-400 transition cursor-pointer"
+          >
+            View Task
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="border border-white rounded-xl p-6 flex flex-col items-center justify-center"
+        >
+          <h3 class="text-xl font-semibold mb-4">JS Task 2</h3>
+          <h1 class="text-2xl font-semibold mb-4">Dynamic User Manager</h1>
+          <a
+            href="https://pavibritta.github.io/JavasriptInternshipProjects/Dynamicusermanager/"
+            class="inline-block bg-green-300 text-gray-800 mt-4 px-4 py-2 border border-white rounded shadow font-medium hover:bg-green-400 transition cursor-pointer"
+          >
+            View Task
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="border border-white rounded-xl p-6 flex flex-col items-center justify-center"
+        >
+          <h3 class="text-xl font-semibold mb-4">JS Task 3</h3>
+          <h1 class="text-2xl font-semibold mb-4">Active State Navigator</h1>
+          <a
+            href="https://pavibritta.github.io/JavasriptInternshipProjects/Activestatenavigator/"
+            class="inline-block bg-green-300 text-gray-800 mt-4 px-4 py-2 border border-white rounded shadow font-medium hover:bg-green-400 transition cursor-pointer"
+          >
+            View Task
+          </a>
+        </div>
+
+        <!--card-4-->
+
+        <div
+          class="border border-white rounded-xl p-6 flex flex-col items-center justify-center"
+        >
+          <h3 class="text-xl font-semibold mb-4">JS Task 4</h3>
+          <h1 class="text-2xl font-semibold mb-4">Greeting Bot</h1>
+          <a
+            href="https://pavibritta.github.io/JavasriptInternshipProjects/Greetingbot/"
+            class="inline-block bg-green-300 text-gray-800 mt-4 px-4 py-2 border border-white rounded shadow font-medium hover:bg-green-400 transition cursor-pointer"
+          >
+            View Task
+          </a>
+        </div>
+
+        <!--card 5-->
+
+        <div
+          class="border border-white rounded-xl p-6 flex flex-col items-center justify-center"
+        >
+          <h3 class="text-xl font-semibold mb-4">JS Task 4</h3>
+          <h1 class="text-2xl font-semibold mb-4">Background color Switcher</h1>
+          <a
+            href="https://pavibritta.github.io/JavasriptInternshipProjects/Backgroundswitcher/"
+            class="inline-block bg-green-300 text-gray-800 mt-4 px-4 py-2 border border-white rounded shadow font-medium hover:bg-green-400 transition cursor-pointer"
+          >
+            View Task
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--js-->
+    <script src="./script.js"></script>
+  </body>
+</html>
