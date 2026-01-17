@@ -23,7 +23,7 @@ Live: https://pavibritta.github.io/JavasriptInternshipProjects/Jstaskmanagement
   - **Project 5**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Backgroundswitcher/
   - **Project 6**  
-  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Text Formatter/
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Textformatter/
 
 
 ## Deployment
