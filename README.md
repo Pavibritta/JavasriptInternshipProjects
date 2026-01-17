@@ -22,6 +22,8 @@ Live: https://pavibritta.github.io/JavasriptInternshipProjects/Jstaskmanagement
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Greetingbot/
   - **Project 5**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Backgroundswitcher/
+  - **Project 6**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Text Formatter/
 
 
 ## Deployment
