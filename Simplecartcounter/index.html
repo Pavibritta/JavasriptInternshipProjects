@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Cart Counter</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/4357/4357350.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="relative">
+    <p class="absolute right-20 top-3 cursor-pointer">
+      <i class="fa-solid fa-cart-arrow-down text-2xl relative"></i>
+      <div class=" rounded-full shadow bg-red-700 h-5 w-5 flex items-center justify-center text-white absolute right-19 top-1 cart-count">0</div>
+    </p>
+    <h1 class="text-2xl font-bold text-gray-700 text-center mt-10 mb-10">
+      Product List
+    </h1>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-10 cursor-pointer"
+      id="output-div"
+    >
+      <div
+        class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+      >
+        <!-- Product Image -->
+        <div class="overflow-hidden">
+          <img
+            src="./assets/images/bag.avif"
+            class="w-full h-44 object-cover transform hover:scale-105 transition duration-300"
+          />
+        </div>
+
+        <!-- Product Details -->
+        <div class="p-4 space-y-3">
+          <h3 class="text-lg font-semibold text-gray-800 text-center">
+            Hand Bag
+          </h3>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-bold text-green-600">₹700</p>
+            <button
+              class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 active:scale-95 transition cart-btn"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+      >
+        <!-- Product Image -->
+        <div class="overflow-hidden">
+          <img
+            src="./assets/images/cooling glass.avif"
+            class="w-full h-44 object-cover transform hover:scale-105 transition duration-300"
+          />
+        </div>
+
+        <!-- Product Details -->
+        <div class="p-4 space-y-3">
+          <h3 class="text-lg font-semibold text-gray-800 text-center">
+            Cooling Glass
+          </h3>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-bold text-green-600">₹300</p>
+            <button
+              class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 active:scale-95 transition cart-btn"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+      >
+        <!-- Product Image -->
+        <div class="overflow-hidden">
+          <img
+            src="./assets/images/shoes.avif"
+            class="w-full h-44 object-cover transform hover:scale-105 transition duration-300"
+          />
+        </div>
+
+        <!-- Product Details -->
+        <div class="p-4 space-y-3">
+          <h3 class="text-lg font-semibold text-gray-800 text-center">Shoes</h3>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-bold text-green-600">₹1000</p>
+            <button
+              class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 active:scale-95 transition cart-btn"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+      >
+        <!-- Product Image -->
+        <div class="overflow-hidden">
+          <img
+            src="./assets/images/watch.avif"
+            class="w-full h-44 object-cover transform hover:scale-105 transition duration-300"
+          />
+        </div>
+
+        <!-- Product Details -->
+        <div class="p-4 space-y-3">
+          <h3 class="text-lg font-semibold text-gray-800 text-center">Watch</h3>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-bold text-green-600">₹500</p>
+            <button
+              class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 active:scale-95 transition cart-btn"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -89,6 +89,12 @@ let projects = [
     link: "https://pavibritta.github.io/JavasriptInternshipProjects/Dynamicbulletpoints/",
     date: "19/01/2026",
   },
+  {
+    taskNo: "Task 9",
+    name: "Simple Cart Counter",
+    link: "https://pavibritta.github.io/JavasriptInternshipProjects/Simplecartcounter/",
+    date: "19/01/2026",
+  },
 ];
 const container = document.querySelector(".container");
 const displayCard = (data) => {

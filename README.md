@@ -30,6 +30,8 @@ Live: https://pavithra-js.netlify.app/
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Showhidepassword/
    - **Project 8**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Dynamicbulletpoints/
+  - **Project 9**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Simplecartcounter/
 
 
 
