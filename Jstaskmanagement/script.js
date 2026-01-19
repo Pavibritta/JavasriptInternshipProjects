@@ -33,7 +33,7 @@ listContainer.forEach((list) => {
         "px-3",
         "py-2",
         "rounded",
-        "shadow-sm"
+        "shadow-sm",
       );
     });
     list.classList.add("bg-green-300", "px-3", "py-2", "rounded", "shadow-sm");
@@ -70,6 +70,18 @@ let projects = [
     name: "Background color Switcher",
     link: "https://pavibritta.github.io/JavasriptInternshipProjects/Backgroundswitcher/",
     date: "12/01/2026",
+  },
+  {
+    taskNo: "Task 6",
+    name: "Text Formatter",
+    link: "https://pavibritta.github.io/JavasriptInternshipProjects/Textformatter/",
+    date: "17/01/2026",
+  },
+  {
+    taskNo: "Task 7",
+    name: "Show Hide Password",
+    link: "https://pavibritta.github.io/JavasriptInternshipProjects/Showhidepassword/",
+    date: "17/01/2026",
   },
 ];
 const container = document.querySelector(".container");
@@ -115,7 +127,7 @@ input.addEventListener("input", () => {
   const filteredProjects = projects.filter(
     (item) =>
       item.date == inputValue ||
-      item.name.toLocaleLowerCase().includes(inputValue)
+      item.name.toLocaleLowerCase().includes(inputValue),
   );
 
   displayCard(filteredProjects);
