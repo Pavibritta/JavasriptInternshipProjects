@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Bullet Points</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/9282/9282706.png"
+    />
+  </head>
+  <body class="bg-gray-300">
+    <!--input form-->
+    <div class="flex justify-center my-10">
+      <div
+        class="rounded shadow-sm w-full md:w-lg bg-white flex flex-col justify-center"
+      >
+        <h2 class="text-2xl font-bold mb-2 text-center text-gray-600 mt-3">
+          Add Product
+        </h2>
+        <div class="mx-auto flex flex-col">
+          <input
+            type="text"
+            name="name"
+            id="product-name"
+            class="border border-gray-300 shadow-sm rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 my-5 mx-auto min-w-10 md:w-sm"
+            placeholder="Enter Product Name"
+          />
+          <small class="error text-red-600 text-sm" id="nameError"></small>
+        </div>
+        <div class="mx-auto flex flex-col">
+          <input
+            type="file"
+            accept="image/*"
+            id="productImage"
+            class="border border-gray-300 shadow-sm rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 my-5 mx-auto min-w-10 md:w-sm"
+            placeholder="Upload image"
+          />
+          <small class="error text-red-600 text-sm" id="imageError"></small>
+        </div>
+
+        <div class="mx-auto flex flex-col">
+          <input
+            type="number"
+            id="productPrice"
+            min="10"
+            class="border border-gray-300 shadow-sm rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 my-5 mx-auto min-w-10 md:w-sm"
+            placeholder="Enter Price"
+          />
+          <small class="error text-red-600 text-sm" id="priceError"></small>
+        </div>
+
+        <button
+          type="submit"
+          class="rounded py-2 px-3 mx-auto my-2 bg-blue-600 text-white hover:bg-blue-800 font-medium cursor-pointer text-md"
+          id="submit-btn"
+        >
+          Add Product
+        </button>
+      </div>
+    </div>
+
+    <!--output card-->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="output-div">
+    
+
+        <!-- <button
+          class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium 
+                 hover:bg-green-700 active:scale-95 transition"
+        >
+          Add to Cart
+        </button>
+       -->
+    </div>
+
+  </div>
+`;
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

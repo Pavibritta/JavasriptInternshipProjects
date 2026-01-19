@@ -28,6 +28,9 @@ Live: https://pavithra-js.netlify.app/
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Textformatter/
   - **Project 7**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Showhidepassword/
+   - **Project 8**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Dynamicbulletpoints/
+
 
 
 ## Deployment
