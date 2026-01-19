@@ -10,6 +10,8 @@ This repository contains multiple JavaScript projects developed using **HTML, Ja
 ## Projects
 - **Project main project**  
 Live: https://pavibritta.github.io/JavasriptInternshipProjects/Jstaskmanagement
+Live: https://pavithra-js.netlify.app/
+
 
 - **Project 1 (Root Project)**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/
