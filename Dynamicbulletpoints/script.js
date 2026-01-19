@@ -34,7 +34,7 @@ submitBtn.addEventListener("click", (e) => {
   if (!validateForm()) return;
 
   const userDetails = {
-    productName: productName.value,
+    productName: productName.value.toUpperCase(),
     productImage: productImage.files[0], // ✅ FIX
     productPrice: productPrice.value, // ✅ FIX
   };
@@ -70,15 +70,15 @@ const displayUser = () => {
     </div>
 
     <!-- Product Details -->
-    <div class="p-4 space-y-3">
+    <div class="p-4 flex justify-between items-center">
       <h3 class="text-lg font-semibold text-gray-800 text-center">
         ${data.productName}
       </h3>
 
-      <div class="flex items-center justify-center">
+      
         <p class="text-xl font-bold text-green-600">
           ₹ ${data.productPrice}
-        </p>
+  
 
         
       </div>
