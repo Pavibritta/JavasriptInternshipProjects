@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show / Hide Password</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link
+      rel="icon"
+      href="https://static.vecteezy.com/system/resources/previews/013/729/597/non_2x/show-password-icon-eye-symbol-vision-hide-from-watch-icon-secret-view-web-design-element-vector.jpg"
+    />
+  </head>
+
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-xl bg-gray-700 rounded-lg shadow-lg p-6 space-y-6">
+      <!-- USER NAME -->
+      <div class="relative">
+        <input
+          type="text"
+          id="name"
+          class="peer w-full bg-transparent border border-gray-300 rounded-lg px-4 py-3 text-white outline-none focus:ring-2 focus:ring-amber-50"
+        />
+        <span class="text-red-600 text-sm error" id="nameError"></span>
+        <label
+          for="name"
+          class="absolute left-4 top-3 text-gray-300 bg-gray-700 px-1 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-blue-400 peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-sm"
+        >
+          User Name
+        </label>
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="relative">
+        <input
+          type="password"
+          id="password"
+          class="peer w-full bg-transparent border border-gray-300 rounded-lg px-4 py-3 text-white outline-none focus:ring-2 focus:ring-amber-50"
+        />
+        <span class="text-red-600 text-sm error" id="passwordError"></span>
+        <label
+          for="password"
+          class="absolute left-4 top-3 text-gray-300 bg-gray-700 px-1 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-blue-400 peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-sm"
+        >
+          Enter your password
+        </label>
+
+        <!-- Eye icons -->
+        <span id="eyeOpen" class="absolute right-4 top-3 cursor-pointer hidden">
+          <i class="fa-solid fa-eye text-white"></i>
+        </span>
+
+        <span id="eyeClose" class="absolute right-4 top-3 cursor-pointer">
+          <i class="fa-solid fa-eye-slash text-white"></i>
+        </span>
+      </div>
+
+      <!-- BUTTON -->
+      <button
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition cursor-pointer submit-btn"
+      >
+        Submit
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
