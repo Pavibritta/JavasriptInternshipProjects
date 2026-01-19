@@ -24,6 +24,8 @@ Live: https://pavibritta.github.io/JavasriptInternshipProjects/Jstaskmanagement
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Backgroundswitcher/
   - **Project 6**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Textformatter/
+  - **Project 7**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Showhidepassword/
 
 
 ## Deployment
