@@ -32,6 +32,8 @@ Live: https://pavithra-js.netlify.app/
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Dynamicbulletpoints/
   - **Project 9**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Simplecartcounter/
+  - **Project 10**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Darkmodetoggle/
 
 
 

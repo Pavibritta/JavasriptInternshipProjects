@@ -95,6 +95,13 @@ let projects = [
     link: "https://pavibritta.github.io/JavasriptInternshipProjects/Simplecartcounter/",
     date: "19/01/2026",
   },
+
+  {
+    taskNo: "Task 9",
+    name: "Dark Mode Toggle & Live Character Counter",
+    link: "https://pavibritta.github.io/JavasriptInternshipProjects/Darkmodetoggle/",
+    date: "20/01/2026",
+  },
 ];
 const container = document.querySelector(".container");
 const displayCard = (data) => {

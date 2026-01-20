@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode | Character Counter</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/5558/5558226.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://microsoft.github.io/vscode-codicons/dist/codicon.css"
+    />
+  </head>
+
+  <body class="min-h-screen pt-24 bg-slate-100 dark:bg-slate-900">
+    <header
+      class="max-w-7xl w-full fixed dark:bg-slate-800 py-5 dark:text-white bg-white top-0 text-gray-800 shadow"
+    >
+      <nav class="flex justify-between px-6 items-center">
+        <h1 class="font-bold text-lg cursor-pointer">PAVITHRA</h1>
+
+        <!-- Theme Toggle -->
+        <div class="flex justify-between gap-5">
+          <div
+            class="h-8 w-8 rounded-full shadow cursor-pointer p-2 flex items-center justify-center bg-white"
+          >
+            <img
+              src="./assets/images/night-mode_12301305.png"
+              alt=""
+              class="hidden night-mode"
+            />
+
+            <img
+              src="./assets/images/light.png"
+              alt=""
+              class="block light-mode"
+            />
+          </div>
+
+          <!-- GitHub -->
+          <div
+            class="h-8 w-8 rounded-full shadow bg-white cursor-pointer p-2 flex items-center justify-center"
+          >
+            <a href="https://github.com/Pavibritta" target="_blank">
+              <img
+                src="./assets/images/icons8-github-50.png"
+                alt="GitHub"
+                height="16"
+                width="16"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--main section-->
+
+    <div
+      class="rounded-lg mx-auto max-w-xl p-3 gap-3 dark:bg-white dark:text-black dark: bg-slate-800 shadow"
+    >
+      <div class="flex gap-3">
+        <img
+          src="./assets/images/rose.jpg"
+          alt=""
+          height="50px"
+          width="30px"
+          class="rounded-full cursor-pointer border border-green-600"
+        />
+        <h1 class="font-bold text-md text-green-400">Pavithra</h1>
+      </div>
+
+      <div class="mt-2 w-full cursor-pointer">
+        <div class="w-full h-48 overflow-hidden rounded-md">
+          <img
+            src="./assets/images/rose.jpg"
+            alt="Post Image"
+            class="w-lg h-full object-cover mx-auto rounded-md"
+          />
+        </div>
+
+        <div class="flex bg-white p-3 rounded-md gap-3">
+          <img
+            src="./assets/images/free-heart-icon-3510-thumb.png"
+            alt=""
+            height="30px"
+            width="30px"
+            class="unlikeImage block"
+          />
+          <img
+            src="./assets/images/vector-red-heart-design-icon.avif"
+            alt=""
+            height="30px"
+            width="30px"
+            class="hidden likeImage"
+          />
+          <div class="comment">
+            <svg
+              aria-label="Comment"
+              class="x1lliihq x1n2onr6 x5n08af"
+              fill="currentColor"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <title>Comment</title>
+              <path
+                d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex-col gap-3 hidden textarea">
+        <textarea
+          class="w-full bg-white dark:bg-gray-800 focus:outline-none p-4 rounded-lg shadow-md border border-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 resize-none transition-all duration-300 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 content mt-3"
+          placeholder="Share your thoughts here..."
+          rows="2"
+          maxlength="200"
+        ></textarea>
+      </div>
+
+      <div class="justify-center items-center mt-3 hidden output">
+        <div class="text-sm text-gray-100 dark:text-gray-500">
+          <span><span id="charCount">0</span>/200 </span>characters |
+          <span id="wordCount">0 </span> words
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
