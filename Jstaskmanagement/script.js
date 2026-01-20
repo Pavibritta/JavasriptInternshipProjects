@@ -97,7 +97,7 @@ let projects = [
   },
 
   {
-    taskNo: "Task 9",
+    taskNo: "Task 10",
     name: "Dark Mode Toggle & Live Character Counter",
     link: "https://pavibritta.github.io/JavasriptInternshipProjects/Darkmodetoggle/",
     date: "20/01/2026",
