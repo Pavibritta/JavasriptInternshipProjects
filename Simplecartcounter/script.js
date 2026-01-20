@@ -28,6 +28,9 @@ cartBtn.forEach((data) => {
 
 removeBtn.forEach((data) => {
   data.addEventListener("click", () => {
+    if (count == 0) {
+      return;
+    }
     const alertMsg = document.createElement("div");
     alertMsg.className =
       "bg-red-600 text-white font-bold absolute right-50 top-1 p-2";
