@@ -102,6 +102,12 @@ let projects = [
     link: "https://pavibritta.github.io/JavasriptInternshipProjects/Darkmodetoggle/",
     date: "20/01/2026",
   },
+  {
+    taskNo: "Task 11",
+    name: "FAQ section",
+    link: "https://pavibritta.github.io/JavasriptInternshipProjects/FAQsection/",
+    date: "21/01/2026",
+  },
 ];
 const container = document.querySelector(".container");
 const displayCard = (data) => {
