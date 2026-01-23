@@ -38,6 +38,8 @@ Live: https://pavithra-js.netlify.app/
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/FAQsection/
   - **Project 12**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Searchfilterlist/
+  - **Project 13**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Randomquotegenerator/
 
 
 ## Deployment

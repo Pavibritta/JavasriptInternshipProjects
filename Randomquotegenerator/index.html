@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/10276/10276414.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gray-900 flex flex-col items-center justify-center text-pink-600"
+  >
+    <div
+      class="w-full max-w-xl bg-gray-100 my-5 mx-10 px-10 py-5 border border-pink-600 rounded-lg shadow cursor-pointer"
+    >
+      <div class="flex justify-between items-center">
+        <h1 class="lg:text-xl font-bold">Random Quote Generator</h1>
+        <button
+          class="border text-gray-100 font-bold px-5 py-3 rounded shadow cursor-pointer bg-linear-60 from-pink-600 to-pink-300 hover:scale-105 transition-all duration-500 newQuote-button"
+        >
+          New Quote
+        </button>
+      </div>
+    </div>
+
+    <div class="quoteContainer"></div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
