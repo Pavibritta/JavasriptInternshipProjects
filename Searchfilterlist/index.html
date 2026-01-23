@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search/Filter List</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/4426/4426128.png"
+    />
+  </head>
+  <body class="bg-gray-900 w-full flex items-center justify-center">
+    <div
+      class="max-w-8xl w-full px-10 py-5 m-10 rounded-4xl shadow text-gray-300 bg-gray-800 flex flex-col justify-center items-center containerDiv"
+    >
+      <h1 class="font-bold lg:text-xl">List of Programming Languages</h1>
+
+      <input
+        type="search"
+        class="bg-gray-200 p-3 text-gray-950 mt-5 rounded w-full max-w-lg shadow cursor-pointer outline-none focus:ring-4 focus:ring-violet-500 search-input"
+        placeholder="Search"
+      />
+      <ul class="p-3 w-full max-w-lg listItem"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

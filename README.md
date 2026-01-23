@@ -36,7 +36,8 @@ Live: https://pavithra-js.netlify.app/
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Darkmodetoggle/
   - **Project 11**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/FAQsection/
-
+  - **Project 12**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Searchfilterlist/
 
 
 ## Deployment
