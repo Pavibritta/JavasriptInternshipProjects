@@ -45,14 +45,13 @@ newQuoteButton.addEventListener("click", () => {
   quoteContainer.innerHTML += `<div
       class="bg-linear-60 from-pink-600 to-pink-500 px-5 py-3 my-5 mx-auto w-full max-w-xl text-white rounded-lg shadow-gray-400 text-center cursor-pointer"
     >
-      <p class="font-['Lobster_Two',sans-serif] font-bold text-lg">
+      <p class="font-['Lobster_Two',sans-serif] font-bold text-2xl">
         ${randomQuotes.quotes}
         <span class="font-bold">-${randomQuotes.author}</span>
       </p>
 
-      <p class="my-3">
+      <small class="my-3">
         ${randomQuotes.meaning}
-      </p>
+      </small>
     </div>`;
 });
-

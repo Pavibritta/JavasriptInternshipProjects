@@ -14,7 +14,7 @@ const displayList = (programmingList) => {
   listItem.innerHTML = "";
   programmingList.forEach((item) => {
     listItem.innerHTML += `
-<li  class="bg-linear-to-bl from-violet-500 to-fuchsia-500 w-full text-gray-300 p-2 rounded shadow mx-auto my-3 cursor-pointer hover:scale-95 transition-all duration-500 font-medium">${item}</li>
+<li  class="bg-linear-to-bl from-violet-500 to-fuchsia-500 w-full text-gray-300 p-2 rounded shadow mx-auto my-3 cursor-pointer hover:scale-95 transition-all duration-500 font-medium text-center">${item}</li>
 `;
   });
 };
@@ -34,7 +34,13 @@ searchInput.addEventListener("input", () => {
     return item.includes(searchValue);
   });
   console.log(matched);
+  const errrItem = document.querySelector(".errrItem");
+  if (matched.length == 0) {
+    listItem.innerHTML = "";
 
-  displayList(matched);
+    errrItem.textContent = "No results found";
+  } else {
+    errrItem.innerHTML = "";
+    displayList(matched);
+  }
 });
-
