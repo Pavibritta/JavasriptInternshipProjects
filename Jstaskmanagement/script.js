@@ -120,6 +120,12 @@ let projects = [
     link: "https://pavibritta.github.io/JavasriptInternshipProjects/Randomquotegenerator/",
     date: "23/01/2026",
   },
+  {
+    taskNo: "Task 14",
+    name: "Calculator App",
+    link: "https://pavibritta.github.io/JavasriptInternshipProjects/Calculatorapp/",
+    date: "27/01/2026",
+  },
 ];
 const container = document.querySelector(".container");
 const displayCard = (data) => {

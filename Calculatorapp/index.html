@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="https://img.freepik.com/premium-vector/calculator-app-icon-calculator-application-icon_1015334-225.jpg"
+    />
+  </head>
+  <body
+    class="bg-[url('/assets/images/back.jpg')] bg-no-repeat bg-cover bg-center min-h-screen opacity-100 flex justify-center backdrop-blur-3xl"
+  >
+    <div
+      class="bg-pink-50 w-full max-w-4xl mt-10 rounded-2xl px-10 py-10 mb-5 flex flex-col gap-5"
+    >
+      <input
+        type="text"
+        class="w-full border border-gray-300 flex flex-col justify-center mb-5 py-3 rounded shadow outline-none px-5 focus:bg-pink-50 font-extrabold text-4xl text-right text-gray-600 inputValue"
+        placeholder="0"
+        readonly
+      />
+      <!--First row-->
+      <div class="grid grid-cols-7 gap-4">
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button
+            class="w-full h-full cursor-pointer inverseBtn"
+            onclick="handleInverse()"
+          >
+            Inv
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button
+            class=" w-full h-full cursor-pointer degBtn"
+            data-value="deg"
+          >
+            Deg
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer factorialBtn" data-value="!">x!</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">(</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">)</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button
+            class="w-full h-full cursor-pointer clrBtn"
+            onclick="handleClear()"
+          >
+            C
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button
+            class="w-full h-full cursor-pointer"
+            onclick="handleStepclear()"
+          >
+            ⌫
+          </button>
+        </div>
+      </div>
+
+      <!--Second row-->
+
+      <div class="grid grid-cols-7 gap-4">
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer inBtn">
+            In
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button
+            class="w-full h-full cursor-pointer sinBtn"
+            data-value="sin()"
+          >
+            sin
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">%</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">7</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">8</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">9</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-xl text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <!-- <button class="actionBtn w-full h-full cursor-pointer">÷</button> -->
+          <button class="actionBtn w-full h-full cursor-pointer" data-value="/">
+            ÷
+          </button>
+        </div>
+      </div>
+
+      <!--Third row-->
+
+      <div class="grid grid-cols-7 gap-4">
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer logBtn">
+            log
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="w-full h-full cursor-pointer cosBtn">cos</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer rootBtn">
+            √
+          </button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">4</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">5</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">6</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer" data-value="*">
+            x
+          </button>
+        </div>
+      </div>
+
+      <!--forth row-->
+      <div class="grid grid-cols-7 gap-4">
+        <div
+          class="bg-blue-300 text-blue-800 text-xl text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer capBtn">
+            ^
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="w-full h-full cursor-pointer tanBtn">tan</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer resiprocalBtn">1/x</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">1</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">2</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">3</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer" data-value="-">
+            -
+          </button>
+        </div>
+      </div>
+
+      <!--fifth row-->
+
+      <div class="grid grid-cols-7 gap-4">
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer expBtn" data-value="">EXP</button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button
+            class="actionBtn w-full h-full cursor-pointer"
+            data-value="Math.PI"
+          >
+            π
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class=" w-full h-full cursor-pointer eBtn">e</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">0</button>
+        </div>
+        <div
+          class="bg-white text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer">.</button>
+        </div>
+        <div
+          class="text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 bg-blue-800 text-white transition-all duration-600 hover:bg-blue-900"
+        >
+          <button
+            onclick="handleResult()"
+            class="equalBtn w-full h-full cursor-pointer"
+          >
+            =
+          </button>
+        </div>
+        <div
+          class="bg-blue-300 text-blue-800 text-lg text-center font-bold rounded-md shadow cursor-pointer px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-600"
+        >
+          <button class="actionBtn w-full h-full cursor-pointer" data-value="-">
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
