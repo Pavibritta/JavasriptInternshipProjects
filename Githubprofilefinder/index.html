@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+
+  <body class="bg-gray-50">
+    <div class="flex justify-center items-center gap-5">
+      <input
+        type="text"
+        placeholder="Enter GitHub username"
+        class="w-full max-w-lg rounded shadow p-3 outline-none focus:border-2 focus:border-blue-600 my-5 bg-gray-700 text-white cursor-pointer inputValue"
+      />
+
+      <button
+        class="bg-green-600 rounded shadow px-6 py-3 text-white my-5 gitBtn cursor-pointer"
+      >
+        Find Profile
+      </button>
+    </div>
+
+    <div
+      class="min-h-screen flex items-center justify-center bg-gray-100 outputDiv"
+    ></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

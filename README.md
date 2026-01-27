@@ -42,6 +42,8 @@ Live: https://pavithra-js.netlify.app/
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Randomquotegenerator/
   - **Project 14**  
   Live: https://pavibritta.github.io/JavasriptInternshipProjects/Calculatorapp/
+   - **Project 15**  
+  Live: https://pavibritta.github.io/JavasriptInternshipProjects/Githubprofilefinder/
 
 
 ## Deployment
