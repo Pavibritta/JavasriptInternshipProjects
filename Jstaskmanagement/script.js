@@ -132,6 +132,12 @@ let projects = [
     link: "https://pavibritta.github.io/JavasriptInternshipProjects/Githubprofilefinder/",
     date: "27/01/2026",
   },
+  {
+    taskNo: "Task 16",
+    name: "Project Estimation",
+    link: "https://pavibritta.github.io/JavasriptInternshipProjects/Projectestimationwebsite/",
+    date: "30/01/2026",
+  },
 ];
 const container = document.querySelector(".container");
 const displayCard = (data) => {
