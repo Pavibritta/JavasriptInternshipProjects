@@ -37,6 +37,20 @@ const userPhone = document.querySelector(".user-phone");
 const typeofPlan = document.querySelector(".typeof-plan");
 const typeofService = document.querySelector(".typeof-service");
 const formDiv = document.querySelector(".formdiv");
+const priceDetails = [
+  { service: "Static Website", type: "Basic", price: "5000" },
+  { service: "Dynamic Website", type: "Standard", price: "12000" },
+  { service: "Dynamic Website", type: "Advanced", price: "40000" },
+  { service: "E-commerce Website", type: "Basic", price: "40000" },
+  { service: "E-commerce Website", type: "Standard", price: "50000" },
+  { service: "E-commerce Website", type: "Advanced", price: "80000" },
+  { service: "Mobile App Development", type: "Basic", price: "50000" },
+  { service: "Mobile App Development", type: "Standard", price: "90000" },
+  { service: "Mobile App Development", type: "Advanced", price: "100000" },
+  { service: "Web App Development", type: "Basic", price: "20000" },
+  { service: "Web App Development", type: "Standard", price: "50000" },
+  { service: "Web App Development", type: "Advanced", price: "80000" },
+];
 
 let submittedData = [];
 submitBtn.addEventListener("click", () => {
@@ -47,11 +61,17 @@ submitBtn.addEventListener("click", () => {
   }
   let price;
 
-  if (typeofPlan.value === "basic") {
-    price = 5000;
-  } else {
-    price = 12000;
-  }
+  priceDetails.forEach((data) => {
+    if (
+      data.service.toLowerCase().trim() ===
+        typeofService.value.toLowerCase().trim() &&
+      data.type.toLowerCase().trim() === typeofPlan.value.toLowerCase().trim()
+    ) {
+      price = data.price;
+    }
+  });
+
+  // console.log(result);
 
   newData = {
     name: userName.value,
@@ -70,8 +90,8 @@ submitBtn.addEventListener("click", () => {
   userEmail.value = "";
   projectName.value = "";
   userPhone.value = "";
-  plan.value = "";
-  service.value = "";
+  typeofPlan.value = "";
+  typeofService.value = "";
 });
 
 const validateForm = () => {
@@ -117,9 +137,12 @@ const validateForm = () => {
 
 const displayEstimation = (submittedData) => {
   const estimationDiv = document.querySelector(".estimationDiv");
+  estimationDiv.innerHTML = "";
 
   submittedData.forEach((data) => {
-    estimationDiv.innerHTML = `<div>
+    const estimationCard = document.createElement("div");
+
+    estimationCard.innerHTML += `<div>
         <div class="flex justify-end px-70">
           <button
             class="bg-gradient-to-r from-green-500 to-emerald-600 px-3 py-3 rounded text-white text-sm cursor-pointer  font-bold back-btn"
@@ -180,7 +203,7 @@ const displayEstimation = (submittedData) => {
           </table>
         </div>
       </div>`;
-
+    estimationDiv.append(estimationCard);
     const backBtn = document.querySelector(".back-btn");
     console.log(backBtn);
     backBtn.addEventListener("click", () => {
@@ -188,6 +211,7 @@ const displayEstimation = (submittedData) => {
       formDiv.style.display = "block";
       estimationDiv.style.display = "none";
       backBtn.style.display = "none";
+      submittedData.length = 0;
     });
   });
 };
